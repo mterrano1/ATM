@@ -8,7 +8,9 @@ default: &default
 
 development:
   <<: *default
-  database: backend_development
+  host: db
+  username: postgres
+  password: mysecretpassword
 
 test:
   <<: *default
